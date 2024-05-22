@@ -1,14 +1,71 @@
+/* effects body */
 * {
     margin: 0%;
     padding: 0%;
 }
 
 nav {
-    background-color: rgb(256,262,9,10%);
+    height: 50px;
+    position: relative;
+    display: inline-block;
+    width: 100vw;
 }
 
-section {}
+a{
+    text-decoration: none;
+}
 
-ul {}
+/* ease of use */
+.row {
+    display: flex;
+}
 
-li {}
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* effects certain elements */
+nav:hover {
+    animation: 3s ease-in 1s infinite reverse both running slidein;
+    background-color:blue;
+}
+nav>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar>ul {
+    list-style-type: none;
+}
+
+.nav-bar-link {
+    display: block;
+    margin-top: 15%;
+    padding: 10px;
+    margin: 5px;
+    background-color: white;
+    color: blue;
+}
+
+.nav-bar-link:hover {
+}
+
+/* effects only that element */
+/* index */
+
+/* about me */
+
+/* gallery */
+
+/* contacts */
+
+/* FAQ */
+
+/* other styling */
