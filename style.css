@@ -2,17 +2,34 @@
 * {
     margin: 0%;
     padding: 0%;
+    box-sizing: border-box
 }
 
 nav {
-    height: 50px;
-    position: relative;
-    display: inline-block;
-    width: 100vw;
+    width: 100%;
+    position: fixed;
 }
 
-a{
+header {
+    height: 35em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-color: rgba(141, 141, 141, 0.7);
+    color: rgb(8, 0, 255);
+}
+
+a {
     text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 50%;
 }
 
 /* ease of use */
@@ -26,16 +43,47 @@ a{
 }
 
 .center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 10px;
+    margin: auto;
+}
+
+.left {
+    width: 50%;
+    float: left;
+}
+
+.right {
+    width: 50%;
+    float: right;
+}
+
+.three>div {
+    width: 33%;
+    margin: 1%;
+}
+
+.two>div {
+    width: 50%;
+    margin: 1%;
 }
 
 /* effects certain elements */
 nav:hover {
-    animation: 3s ease-in 1s infinite reverse both running slidein;
-    background-color:blue;
+    background-color: blue;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+
+    .nav-bar-link {
+        background-color: white;
+        color: blue;
+    }
+
+    .nav-bar-link-contact {
+        background-color: blue;
+        color: white;
+    }
 }
+
 nav>div {
     display: flex;
     justify-content: space-between;
@@ -47,18 +95,81 @@ nav>div {
 
 .nav-bar-link {
     display: block;
-    margin-top: 15%;
     padding: 10px;
     margin: 5px;
-    background-color: white;
-    color: blue;
+    color: black;
 }
 
-.nav-bar-link:hover {
+.nav-bar-link-contact {
+    background-color: blue;
+    color: white;
+}
+
+/* carousel */
+.img-carousel {
+    margin: 1%;
+    max-width: 100%;
+    width: 100%;
+}
+
+.text-carousel {
+    font-size: 26px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prev:hover,
+.next:hover {
+    cursor: pointer;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    width: auto;
+    padding: 15px;
+    margin-right: 25%;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* footer */
+.links-footer {
+    padding: 6px;
+}
+
+.footer-link {
+    margin: 15px;
+    color: black;
 }
 
 /* effects only that element */
 /* index */
+.hero-text {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: rgb(8, 0, 255);
+    font-size: xx-large;
+    font-weight: 800;
+    width: 75%;
+    padding: 10px;
+    margin: auto;
+}
+
+#indexHeader {
+    background-image: url(/images/image.png);
+    background-size: contain;
+    background-position: center;
+}
 
 /* about me */
 
@@ -69,3 +180,15 @@ nav>div {
 /* FAQ */
 
 /* other styling */
+
+/* keyframes */
+
+@keyframes fadeIn {
+    from {
+        opacity: .2
+    }
+
+    to {
+        opacity: 1
+    }
+}
