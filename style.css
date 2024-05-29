@@ -15,10 +15,6 @@ nav {
     position: fixed;
 }
 
-header {
-
-}
-
 footer {
     background-color: rgba(141, 141, 141, 0.7);
     color: rgb(8, 0, 255);
@@ -142,19 +138,26 @@ nav>div {
 
 nav>a {
     color: blue;
-
 }
 
-.hero-text-header {
+/* header */
+.hero-header {
     height: 45em;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-footer>div {
+.gallery-header {
+    height: 15em;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.no-arrows-header {
+    height: 6em;
+    margin-bottom: 2%;
 }
 
 /* carousel */
@@ -184,6 +187,11 @@ footer>div {
 .footer-link {
     margin: 15px;
     color: black;
+}
+
+footer>div {
+    display: flex;
+    justify-content: space-between;
 }
 
 /* effects only that element */
