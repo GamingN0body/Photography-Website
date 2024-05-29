@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Page</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/app.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <section class="nav-bar-image" id="nav-bar-image-index">
+                <img src="/images/.png" alt="page icon or symbol" class="nav-bar-img" id="nav-bar-img-index">
+            </section>
+            <section class="nav-bar" id="nav-bar-index">
+                <ul class="row">
+                    <li><a href="/index.html" class="nav-bar-link">Home Page</a></li>
+                    <li><a href="/aboutme.html" class="nav-bar-link">About Me</a></li>
+                    <li><a href="/galllery.html" class="nav-bar-link">Gallery</a></li>
+                    <li><a href="/contact.html" class="nav-bar-link nav-bar-link-contact">Contact</a></li>
+                </ul>
+            </section>
+        </div>
+    </nav>
+    <header>
+        <section class="btn-container">
+            <a href="/galllery.html"><button class="btn">All Images</button></a>
+            <a href="/filter/people.html" class="filter-img"><button class="btn">People</button></a>
+            <a href="/filter/scenery.html" class="filter-img"><button class="btn">Scenery</button></a>
+            <a href="/filter/miscellaneous.html" class="filter-img"><button class="btn">Miscellaneous</button></a>
+        </section>
+        <section class="row arrows">
+            <p class="arrow-gallery" onclick="plusImg(-1, 0)">&#8592;</p>
+            <p class="arrow-gallery" onclick="plusImg(1, 0)">&#8594;</p>
+        </section>
+    </header>
+    <main>
+        <section class="container">
+            <div class="img-carousel slide1 gallery-images">
+                <div class="row">
+                    <div class="column">
+                        <section class="img-container" id="">
+                            <img src="/images/people/couple/bride-father.jpg" alt="" class="gallery-img couples">
+                            <img src="/images/people/couple/Almost kissing.jpg" alt="" class="gallery-img couples">
+                            <img src="/images/people/couple/bride-groom.jpg" alt="" class="gallery-img couples">
+                            <img src="/images/people/couple/kissing-closeup-whiteShirt.jpg" alt=""
+                                class="gallery-img couples">
+                        </section>
+                    </div>
+                    <div class="column">
+                        <section class="img-container" id="">
+                            <img src="/images/people/couple/kissing-whiteShirt-greenry.jpg" alt=""
+                                class="gallery-img couples">
+                            <img src="/images/people/couple/pink-blue-waterfall.jpg" alt="" class="gallery-img couples">
+                            <img src="/images/people/couple/whiteShirt-bridge.jpg" alt="" class="gallery-img couples">
+                            <img src="/images/people/couple/whiteShirt-tree.jpg" alt="" class="gallery-img couples">
+                        </section>
+                    </div>
+                    <div class="column">
+                        <section class="img-container" id="">
+                            <img src="/images/people/couple/groom-mother.jpg" alt="" class="gallery-img couples">
+                            <img src="/images/people/group/bride-groom-bestFreinds.jpg" alt=""
+                                class="gallery-img group">
+                            <img src="/images/people/group/bride-groom-family.jpg" alt="" class="gallery-img group">
+                            <img src="/images/people/group/Couples shot.jpg" alt="" class="gallery-img group">
+                        </section>
+                    </div>
+                    <div class="column">
+                        <section class="img-container end-image" id="">
+                            <img src="/images/people/group/group-greyShirts-lake.jpg" alt="" class="gallery-img group">
+                            <img src="/images/people/group/group-waterfall.jpg" alt="" class="gallery-img group">
+                            <img src="/images/people/group/six-on-dock.jpg" alt="" class="gallery-img group">
+                            <img src="/images/people/group/adults-kids-waterfall.jpg" alt="" class="gallery-img group">
+                            <img src="/images/people/kids/running-childern.jpg" alt="" class="gallery-img kids">
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="img-carousel slide1 gallery-images">
+                <div class="row">
+                    <div class="column">
+                        <section class="img-container" id="">
+                            <img src="/images/people/kids/chess-kid-adult.jpg" alt="" class="gallery-img kids">
+                            <img src="/images/people/kids/kid-spinning-brownShirt.jpg" alt="" class="gallery-img kids">
+                            <img src="/images/people/kids/groom-kid.jpg" alt="" class="gallery-img kids">
+                        </section>
+                    </div>
+                    <div class="column">
+                        <section class="img-container" id="">
+                            <img src="/images/people/kids/kids-leafs-smiling.jpg" alt="" class="gallery-img kids">
+                            <img src="/images/people/kids/kids-looking-waterfall.jpg" alt="" class="gallery-img kids">
+                            <img src="/images/people/unorganized/girl-fence-field.jpg" alt=""
+                                class="gallery-img couple">
+
+                        </section>
+                    </div>
+                    <div class="column">
+                        <section class="img-container end-image" id="">
+                            <img src="/images/people/Personal/David-kids-beach.png" alt="" class="gallery-img ">
+                            <img src="/images/people/couple/" alt="" class="gallery-img ">
+                            <img src="/images/people/Personal/David-kids-walking.png" alt="" class="gallery-img ">
+                            <img src="/images/people/unorganized/girls-on-tree-two.jpg" alt=""
+                                class="gallery-img couple">
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="row">
+            <section class="copyright-footer">
+                <h6>maybe</h6>
+            </section>
+            <section class="links-footer">
+                <a href="" class="footer-link">Home Page</a>
+                <a href="" class="footer-link">About Me</a>
+                <a href="" class="footer-link">Gallery</a>
+                <a href="" class="footer-link">Contact</a>
+            </section>
+            <section class="symbol-footer">
+                <img src="/image.png" alt="image of the website logo" class="website-logo-footer">
+            </section>
+        </div>
+    </footer>
+    <script>
+        // manaul
+        let slideIndex = [1];
+        let slideId = ["slide1"]
+        showSlides(1, 0);
+
+        function plusImg(n, no) {
+            showSlides(slideIndex[no] += n, no);
+        }
+
+        function showSlides(n, no) {
+            let i;
+            let x = document.getElementsByClassName(slideId[no]);
+            if (n > x.length) { slideIndex[no] = 1 }
+            if (n < 1) { slideIndex[no] = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex[no] - 1].style.display = "block";
+        }
+    </script>
+</body>
+
+</html>
