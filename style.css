@@ -6,13 +6,17 @@
 }
 
 body {
-    background-color: black;
+    background-color: rgb(35, 22, 8);
 }
 
 nav {
     background-color: rgba(255, 255, 255, 0.5);
     width: 100%;
     position: fixed;
+}
+
+header {
+    width: 100vw;
 }
 
 footer {
@@ -64,6 +68,9 @@ p {
 }
 
 /* ease of use */
+.nav-row,
+.gallery-row,
+.about-me-row,
 .row {
     display: flex;
 }
@@ -212,6 +219,14 @@ footer>div {
     background-position: center;
 }
 
+.solo-img {
+    width: 55%;
+}
+
+#pet-gallery-index {
+    width: 280%;
+}
+
 /* about me */
 #aboutMeHeader {
     background-image: url(/images/specials/band/clossup-bass.jpg);
@@ -281,6 +296,8 @@ footer>div {
     width: 40%;
 }
 
+/*  */
+
 /* contacts */
 
 /* FAQ */
@@ -300,4 +317,134 @@ footer>div {
 }
 
 /* mobile */
-/*  */
+/*tablet  */
+@media only screen and (max-width: 800px) {
+
+    /* effects everything */
+    h1 {
+        font-size: 45px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 17px;
+    }
+
+    /* headings */
+    .gallery-header {
+        height: 15em;
+    }
+
+    /* nav */
+    nav>div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav>ul {
+        display: flex;
+    }
+
+    .nav-bar-image {
+        opacity: 0;
+    }
+
+    /* footer */
+    .copyright-footer,
+    .symbol-footer {
+        opacity: 0;
+        font-size: 0;
+    }
+
+    /* ease of use */
+    .row {
+        display: flex;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+    }
+
+    .three>div {
+        width: 95%;
+        margin: 1%;
+    }
+
+    /* img carsousels */
+    .img-carousel {
+        width: 100%;
+    }
+
+    /* index */
+    .about-me-sect {
+        display: flex;
+        flex-direction: column;
+    }
+    .solo-img {
+        width: 0;
+    }
+
+    .gallery-text {
+        opacity: 0;
+    }
+
+    .about-me-sect {
+        width: 95%;
+    }
+
+    #experience-index {
+        width: 100%;
+    }
+
+    #pet-gallery-index {
+        width: 0;
+    }
+
+    /* about */
+    .about-me-row {
+        display: flex;
+        margin-right: 25px;
+    }
+
+    #two-images-mobile {
+        width: 0;
+    }
+
+    .about-me-gallery {
+        width: 50%;
+    }
+
+    #david-image {
+        width: 100%;
+    }
+
+    /* gallery */
+    .img-carousel>.row {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        margin: auto;
+    }
+
+    .gallery-img:hover {
+        width: 100%;
+    }
+
+    .gallery-img:active {
+        position: absolute;
+        width: 100%;
+        transform: translate(-39px);
+    }
+
+    .btn {
+        width: fit-content;
+    }
+}
