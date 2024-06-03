@@ -231,6 +231,11 @@ footer>div {
     background-position: center;
 }
 
+.information {
+    width: 50%;
+    margin: 15px auto;
+}
+
 #index-sect-information {
     text-align: center;
 }
