@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body id="gallery-body">
     <nav>
         <div>
             <section class="nav-bar-image" id="nav-bar-image-index">
@@ -187,18 +187,18 @@
         <button class="open-button nav-bar-link nav-bar-link-contact" onclick="openForm()">Contact</button>
         <div class="form-popup" id="myForm">
             <form class="form-container">
-                <h3>Login</h3>
+                <h3>Contact</h3>
 
                 <label for="email"><b>Email</b></label>
                 <input type="text" placeholder="Enter Email" name="email" required>
 
-                <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
+                <label for="psw"><b>Name</b></label>
+                <input type="name" placeholder="Enter Name" name="name" required>
 
                 <label for="mess"><b>Message</b></label>
                 <textarea id="message" rows="4" placeholder="What are you looking for?" required></textarea>
 
-                <button type="submit" class="btn">Login</button>
+                <button type="submit" class="btn">Send</button>
                 <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
             </form>
         </div>

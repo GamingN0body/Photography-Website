@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: rgb(31, 123, 124);
+    background-color: rgb(0, 0, 0);
 }
 
 nav {
@@ -103,6 +103,10 @@ p {
 .two>div {
     width: 50%;
     margin: 1%;
+}
+
+.full {
+    width: 100%;
 }
 
 /* effects certain elements */
@@ -221,19 +225,75 @@ footer>div {
 }
 
 #indexHeader {
-    background-image: url(/images/scenary/water/ocean-cliff.jpg);
+    background-image: url(/images/specials/fireworks/red-circle.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.about-me-art,
-.gallery-index {
-    background-color: rgb(22, 114, 75);
+#index-sect-information {
+    text-align: center;
 }
 
-.solo-img {
-    width: 55%;
+.index-heroText {
+    height: 50vh;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.index-heroText>a {
+    color: white;
+    background-color: rgba(68, 62, 62, 0.5);
+    box-shadow: 0 0 10px;
+
+    font-size: 50px;
+    padding: 5px;
+    margin: 1px;
+
+    cursor: pointer;
+}
+
+.index-heroText>a:hover {
+    background-color: rgba(107, 97, 97, 0.5);
+}
+
+#group-photo-heroPic {
+    background-image: url(/images/people/group/adults-kids-waterfall.jpg);
+}
+
+#couple-photo-heroPic {
+    background-image: url(/images/people/couple/whiteShirt-bridge.jpg);
+}
+
+.textbox {
+    padding: 18px 40px;
+    background-color: rgb('245, 222, 179, 0.4');
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px;
+    font-size: 18px;
+    color: aliceblue;
+    font-weight: 500;
+}
+
+#expectations {
+    background-image: url(/images/people/Personal/David-Susan.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.experience {
+    text-align: center;
+    width: 65%;
+    margin: auto;
 }
 
 .gallery-index {
@@ -252,7 +312,8 @@ footer>div {
     background-position: center;
 }
 
-#about, .about-sect {
+#about,
+.about-sect {
     background-color: black;
 }
 
@@ -326,6 +387,14 @@ footer>div {
 }
 
 /* gallery */
+#gallery-body {
+    background-image: url("/images/specials/fireworks/red-circle.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 .content {
     margin: auto;
 }
@@ -367,7 +436,7 @@ footer>div {
     background-color: azure;
     border: 5px solid azure;
     border-radius: 15px;
-    box-shadow: 1px 1px 1px azure;
+    box-shadow: 0 0 10px;
 }
 
 .gallery-main>.img {
@@ -440,8 +509,8 @@ footer>div {
 
 textarea,
 .form-container input[type=text],
-.form-container input[type=password] {
-    width: 85%;
+.form-container input[type=name] {
+    width: 100%;
     padding: 15px;
     margin: 5px 0 22px 0;
     border: none;
@@ -468,6 +537,7 @@ textarea,
 .form-container>h3 {
     color: black;
 }
+
 /* FAQ */
 
 /* other styling */
@@ -488,6 +558,10 @@ textarea,
 @media only screen and (max-width: 950px) {
     .gallery {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .index-heroText {
+        background-position: center;
     }
 }
 
@@ -523,6 +597,12 @@ textarea,
     }
 
     /* nav */
+    nav {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: rgba(247, 247, 247, 0.925);
+    }
+
     nav>div {
         display: flex;
         flex-direction: column;
@@ -534,6 +614,8 @@ textarea,
 
     .nav-bar-image {
         opacity: 0;
+        width: 0;
+        height: 0;
     }
 
     /* footer */
@@ -564,6 +646,24 @@ textarea,
     }
 
     /* index */
+    .index-heroText {
+        background-position: center;
+    }
+
+    .index-heroText>a {
+        font-size: 25px;
+    }
+
+    #expectations {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #experience {
+        display: flex;
+        margin-right: 25px;
+    }
+
     .about-me-sect {
         display: flex;
         flex-direction: column;
@@ -590,11 +690,6 @@ textarea,
     }
 
     /* about */
-    .about-me-row {
-        display: flex;
-        margin-right: 25px;
-    }
-
     #two-images-mobile {
         width: 0;
     }
