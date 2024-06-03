@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me Page</title>
     <link rel="stylesheet" href="style.css">
-    <script src="app.js"></script>
 </head>
 
-<body>
+<body id="about">
     <nav>
         <div>
             <section class="nav-bar-image" id="nav-bar-image-index">
@@ -20,7 +19,6 @@
                     <li><a href="/index.html" class="nav-bar-link">Home Page</a></li>
                     <li><a href="/aboutme.html" class="nav-bar-link">About Me</a></li>
                     <li><a href="/galllery.html" class="nav-bar-link">Gallery</a></li>
-                    <li><a href="/contact.html" class="nav-bar-link nav-bar-link-contact">Contact</a></li>
                 </ul>
             </section>
         </div>
@@ -33,50 +31,58 @@
         </section>
     </header>
     <main>
-        <article>
-            <h1>About Who I Am</h1>
-            <section class="about-me-sect left">
-                <p class="about-me-input">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quos esse,
-                    cum beatae, provident quae repudiandae saepe sequi nobis quibusdam ipsam sed delectus nesciunt
-                    laborum!
-                    Qui repellendus hic voluptates unde!
-                </p>
-                <p class="about-me-input">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum libero ex ab ea perspiciatis velit
-                    repellat expedita, porro quisquam natus quidem? Natus omnis vitae nihil id, ipsa suscipit non
-                    officia!
-                </p>
-                <p class="about-me-input">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo itaque magni dolor voluptatem
-                    possimus,
-                    commodi minima vitae animi expedita qui incidunt quia dignissimos recusandae quasi excepturi error
-                    temporibus, sequi accusantium.
-                </p>
-                <p class="about-me-input">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, libero ratione? Atque corporis esse
-                    similique harum laboriosam alias molestias, corrupti impedit velit quasi at! Itaque ex rerum
-                    possimus
-                    libero labore?
-                </p>
-            </section>
-            <section class="about-me-sect right">
-                <div class="column">
-                    <div class="about-me-row">
-                        <img src="/images/people/Personal/David-kids-beach.png" alt="image of a Susian" class="about-me-gallery">
-                        <img src="/images/people/Personal/David-Susan-kiss.png" alt="image of Loghan" class="about-me-gallery">
-                    </div>
-                    <div class=" about-me-row">
-                        <img src="/images/people/Personal/David-explaining.png" alt="image of david" class="about-me-gallery" id="david-image">
-                    </div>
-                    <div class=" about-me-row" id="two-images-mobile">
-                        <img src="/images/people/Personal/David-Susan.png" alt="image of a Susian" class="about-me-gallery">
-                        <img src="/images/people/Personal/David-kids-walking.png" alt="image of a Loghan" class="about-me-gallery">
-                    </div>
-                </div>
-            </section>
-        </article>
+        <h1>About Who I Am</h1>
+        <section class="about-sect left">
+            <p class="about-input">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quos esse,
+                cum beatae, provident quae repudiandae saepe sequi nobis quibusdam ipsam sed delectus nesciunt
+                laborum!
+                Qui repellendus hic voluptates unde!
+            </p>
+            <p class="about-input">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum libero ex ab ea perspiciatis velit
+                repellat expedita, porro quisquam natus quidem? Natus omnis vitae nihil id, ipsa suscipit non
+                officia!
+            </p>
+            <p class="about-input">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo itaque magni dolor voluptatem
+                possimus,
+                commodi minima vitae animi expedita qui incidunt quia dignissimos recusandae quasi excepturi error
+                temporibus, sequi accusantium.
+            </p>
+            <p class="about-input">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, libero ratione? Atque corporis esse
+                similique harum laboriosam alias molestias, corrupti impedit velit quasi at! Itaque ex rerum
+                possimus
+                libero labore?
+            </p>
+        </section>
+        <section class="about-img-art right">
+            <div class="big gallery-column people">
+                <img class="gallery-img" class="gallery-img" src="/images/people/Personal/David-explaining.png" alt="">
+            </div>
+        </section>
+        <button class="open-button nav-bar-link nav-bar-link-contact" onclick="openForm()">Contact</button>
+        <div class="form-popup" id="myForm">
+            <form class="form-container">
+                <h3>Login</h3>
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <label for="mess"><b>Message</b></label>
+                <textarea id="message" rows="4" placeholder="What are you looking for?" required></textarea>
+
+                <button type="submit" class="btn">Login</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
     </main>
+    <script src="app.js"></script>
+
 </body>
 
 </html>
