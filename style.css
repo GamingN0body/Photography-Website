@@ -234,6 +234,7 @@ footer>div {
 .information {
     width: 50%;
     margin: 15px auto;
+    padding: 10px;
 }
 
 #index-sect-information {
@@ -276,7 +277,6 @@ footer>div {
 }
 
 .textbox {
-    padding: 18px 40px;
     background-color: rgb('245, 222, 179, 0.4');
     border: none;
     outline: none;
@@ -285,6 +285,14 @@ footer>div {
     font-size: 18px;
     color: aliceblue;
     font-weight: 500;
+}
+
+.textbox>p {
+    padding: 1px 40px;
+}
+
+.textbox>h3 {
+    padding: 18px;
 }
 
 #expectations {
