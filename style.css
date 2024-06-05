@@ -324,10 +324,12 @@ footer>div {
 #about,
 .about-sect {
     background-color: black;
+    padding: 5px;
 }
 
 .about-input {
     font-weight: 600;
+    padding: 15px;
 }
 
 .about-me-input {
@@ -336,13 +338,10 @@ footer>div {
 }
 
 .about-img-art {
-    max-width: 1200px;
-    margin: 60px auto;
+    max-width: 60%;
+    width: 50%;
+    margin: auto;
     padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: 250px;
-    gap: 15px;
 }
 
 .about-img-art>div {
@@ -572,6 +571,16 @@ textarea,
     .index-heroText {
         background-position: center;
     }
+
+    .left,
+    .right {
+        width: 100%;
+        float: none;
+    }
+
+    .gallery-img {
+
+    }
 }
 
 @media only screen and (max-width: 650px) {
@@ -639,10 +648,7 @@ textarea,
         display: flex;
     }
 
-    .left,
-    .right {
-        width: 100%;
-    }
+
 
     .three>div {
         width: 95%;
@@ -694,22 +700,8 @@ textarea,
         width: 100%;
     }
 
-    #pet-gallery-index {
-        width: 0;
-    }
-
     /* about */
-    #two-images-mobile {
-        width: 0;
-    }
 
-    .about-me-gallery {
-        width: 50%;
-    }
-
-    #david-image {
-        width: 100%;
-    }
 
     /* gallery */
     .img-carousel>.row {
