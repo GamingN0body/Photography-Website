@@ -14,6 +14,14 @@
             <section class="nav-bar-image" id="nav-bar-image-index">
                 <img src="" alt="page icon or symbol" class="nav-bar-img" id="nav-bar-img-index">
             </section>
+            <ul class="btn-container">
+                <li class="nav-gallery-link btn active" onclick="filterSelection('all')"> Show all</li>
+                <li class="nav-gallery-link btn" onclick="filterSelection('scenery')"> Scenery</li>
+                <li class="nav-gallery-link btn" onclick="filterSelection('pets')"> Pets</li>
+                <li class="nav-gallery-link btn" onclick="filterSelection('people')"> People</li>
+                <!-- if you want a new button to filter use the code below by coping it and inputing your class name and text -->
+                <!-- <button class="btn" onclick="filterSelection('class name')"> text </button>  -->
+            </ul>
             <section class="nav-bar" id="nav-bar-index">
                 <ul class="nav-row">
                     <li><a href="/index.html" class="nav-bar-link">Home Page</a></li>
@@ -23,15 +31,8 @@
             </section>
         </div>
     </nav>
-    <header class="gallery-header">
-        <section class="btn-container">
-            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-            <button class="btn" onclick="filterSelection('scenery')"> Scenery</button>
-            <button class="btn" onclick="filterSelection('pets')"> Pets</button>
-            <button class="btn" onclick="filterSelection('people')"> People</button>
-            <!-- if you want a new button to filter use the code below by coping it and inputing your class name and text -->
-            <!-- <button class="btn" onclick="filterSelection('class name')"> text </button>  -->
-        </section>
+    <header>
+        <hr>
     </header>
     <main class="gallery-main gallery">
         <div class="tall gallery-column people">
@@ -187,18 +188,18 @@
         <button class="open-button nav-bar-link nav-bar-link-contact" onclick="openForm()">Contact</button>
         <div class="form-popup" id="myForm">
             <form class="form-container">
-                <h3>Contact</h3>
+                <h3>Login</h3>
 
                 <label for="email"><b>Email</b></label>
                 <input type="text" placeholder="Enter Email" name="email" required>
 
-                <label for="psw"><b>Name</b></label>
-                <input type="name" placeholder="Enter Name" name="name" required>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
 
                 <label for="mess"><b>Message</b></label>
                 <textarea id="message" rows="4" placeholder="What are you looking for?" required></textarea>
 
-                <button type="submit" class="btn">Send</button>
+                <button type="submit" class="btn">Login</button>
                 <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
             </form>
         </div>
