@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body id="about">
+<body>
     <nav>
         <div>
             <section class="nav-bar-image" id="nav-bar-image-index">
@@ -31,47 +31,52 @@
         </section>
     </header>
     <main>
-        <h1 id="h1-aboutMe">About Who I Am</h1>
+        <h1 id="h1-aboutMe">About Me</h1>
         <section class="about-sect left">
             <p class="about-input">
-                When I was twelve years old, my parents bought me my first camera.  It took me all of 2 minutes to go through the 23 pictures in the roll. I have never been so excited in my life, waiting for that perfect bird picture. There began my passion for photography.
+                When I was twelve years old, my parents bought me my first camera. It took me all of 2 minutes to go
+                through the 23 pictures in the roll. I have never been so excited in my life, waiting for that perfect
+                bird picture. There began my passion for photography.
             </p>
             <p class="about-input">
-                I started my career in 2003 working with Larson Brothers as a school photographer. I love getting the opportunity to freeze time on the special moments. My favorite projects were always the family events at school. Later I went on to work for Milne Photography where I was able to establish my art.
+                I started my career in 2003 working with Larson Brothers as a school photographer. I love getting the
+                opportunity to freeze time on the special moments. My favorite projects were always the family events at
+                school. Later I went on to work for Milne Photography where I was able to establish my art.
             </p>
             <p class="about-input">
-                Untitled Photography was established in 2015. I have specialized in taking wedding, family and senior photography. I love going to the different locations and getting to know each client through my lens.
+                Untitled Photography was established in 2015. I have specialized in taking wedding, family and senior
+                photography. I love going to the different locations and getting to know each client through my lens.
             </p>
             <p class="about-input">
-                I encourage you to embrace each moment and in the quiet moments capture a picture. When you know you will not get that quiet it moment I am here to do it for you. I look forward to hearing from you soon.
+                I encourage you to embrace each moment and in the quiet moments capture a picture. When you know you
+                will not get that quiet it moment I am here to do it for you. I look forward to hearing from you soon.
             </p>
         </section>
         <section class="about-img-art right">
-            <div class="big gallery-column people">
-                <img class="gallery-img" class="gallery-img" src="/images/people/Personal/David-explaining.png" alt="">
+            <div class="">
+                <img class="gallery-img" src="/images/people/Personal/David-explaining.png" alt="">
             </div>
         </section>
         <button class="open-button nav-bar-link nav-bar-link-contact" onclick="openForm()">Contact</button>
         <div class="form-popup" id="myForm">
             <form class="form-container">
-                <h3>Login</h3>
+                <h3>Contact</h3>
 
                 <label for="email"><b>Email</b></label>
                 <input type="text" placeholder="Enter Email" name="email" required>
 
-                <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
+                <label for="psw"><b>Name</b></label>
+                <input type="name" placeholder="Enter Name" name="name" required>
 
                 <label for="mess"><b>Message</b></label>
                 <textarea id="message" rows="4" placeholder="What are you looking for?" required></textarea>
 
-                <button type="submit" class="btn">Login</button>
+                <button type="submit" class="btn">Send</button>
                 <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
             </form>
         </div>
     </main>
     <script src="app.js"></script>
-
 </body>
 
 </html>
